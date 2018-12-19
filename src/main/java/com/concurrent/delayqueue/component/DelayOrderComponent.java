@@ -6,7 +6,6 @@ import com.concurrent.delayqueue.model.OrderInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.util.Iterator;
@@ -29,7 +28,7 @@ public class DelayOrderComponent {
     }
 
     /**
-     * 系统启动时，预先加载的数据
+     * 系统启动时，预先加载的数据@PostConstruct
      */
     @PostConstruct
     public void init(){
